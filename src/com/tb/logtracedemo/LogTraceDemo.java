@@ -1,7 +1,3 @@
-/**
-* Change for git gui
-*/
-
 package com.tb.logtracedemo;
 
 import com.tb.logtracedemo.R;
