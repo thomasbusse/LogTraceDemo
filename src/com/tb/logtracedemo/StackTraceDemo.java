@@ -1,4 +1,4 @@
-package com.tb.git.logtracedemo;
+package com.tb.logtracedemo;
 
 import android.util.Log;
 

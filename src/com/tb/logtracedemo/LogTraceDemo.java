@@ -2,9 +2,9 @@
 * Change for git gui
 */
 
-package com.tb.git.logtracedemo;
+package com.tb.logtracedemo;
 
-import com.tb.git.logtracedemo.R;
+import com.tb.logtracedemo.R;
 
 import android.app.Activity;
 import android.os.Bundle;
