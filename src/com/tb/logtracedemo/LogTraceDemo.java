@@ -5,7 +5,7 @@ import com.tb.logtracedemo.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.view.View; 
 
 /**
  * LogTraceDemo
@@ -83,6 +83,18 @@ public class LogTraceDemo extends Activity {
 		// Call a method to create an exception which contains a stacktrace
 		// which can be printed
 		std.printStackTrace();
+	}
+
+	/** Will be connected with the buttons via XML */
+	public void assertclickHandler(View view) {
+		switch (view.getId()) {
+		case R.id.ButtonAssertSimple:
+			assert false;
+			break;
+		case R.id.ButtonAssertWithMsg:
+			assert false : "My assert message";
+			break;
+		}
 	}
 
 }

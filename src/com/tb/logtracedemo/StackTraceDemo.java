@@ -43,6 +43,7 @@ public class StackTraceDemo {
 		} catch (Exception e) {
 			// handle exception: in this case here print the stack trace of the throwable
 			String st;
+			// Once we got the throwable (exception) we can get the stack trace and print it
 			st = Log.getStackTraceString(e);
 			Log.i(LOG_TAG, st);
 		}

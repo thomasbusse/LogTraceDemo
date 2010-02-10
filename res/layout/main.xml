@@ -22,7 +22,7 @@
 
 <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer2">
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isLoggableLogging"></TextView>
-<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonERROR" android:text="@string/buttonERROR" android:onClick="logIsLoggableClickHandler"></Button>
 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonWARN" android:text="@string/buttonWARN" android:onClick="logIsLoggableClickHandler"></Button>
 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buttonINFO" android:id="@+id/ButtonINFO" android:onClick="logIsLoggableClickHandler"></Button>
@@ -32,10 +32,19 @@
 </LinearLayout>
 
 
-<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer2">
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer3">
 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Miscellaneous"></TextView>
-<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<LinearLayout android:id="@+id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
 <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonStackTrace" android:text="@string/buttonStackTrace" android:onClick="stackTraceClickHandler"></Button>
+</LinearLayout>
+</LinearLayout>
+
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer4">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Asserts"></TextView>
+<LinearLayout android:id="@+id/LinearLayout04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonAssertSimple" android:text="@string/buttonAssertSimple" android:onClick="assertClickHandler"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonAssertWithMsg" android:text="@string/buttonAssertWithMsg" android:onClick="assertClickHandler"></Button>
 </LinearLayout>
 </LinearLayout>
 
