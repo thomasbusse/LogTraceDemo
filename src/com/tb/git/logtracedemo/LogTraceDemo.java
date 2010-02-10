@@ -12,7 +12,7 @@ import android.util.Log;
 import android.view.View;
 
 /**
- * LogTraceDemoGit
+ * LogTraceDemo
  * package renamed.
  * @author tbusse
  * 
