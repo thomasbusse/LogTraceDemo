@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info">This is a small app to show the logging functionality of Android!</string>
+    <string name="app_name">LogTraceDemo</string>
+<string name="buttonERROR">ERROR</string><string name="buttonWARN">WARN</string><string name="buttonINFO">INFO</string>
+<string name="buttonDEBUG">DEBUG</string>
+<string name="buttonVERBOSE">VERBOSE</string>
+<string name="normalLogging">Normal Log</string><string name="isLoggableLogging">isLoggable Log</string>
+<string name="buttonStackTrace">Stack Trace</string>
+<string name="Miscellaneous">Miscellaneous</string>
+</resources>

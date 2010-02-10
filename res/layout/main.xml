@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/info"
+    /><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LinearLayoutContainer1" android:orientation="vertical">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normalLogging"></TextView>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonERROR" android:onClick="logClickHandler" android:text="@string/buttonERROR"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonWARN" android:onClick="logClickHandler" android:text="@string/buttonWARN"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buttonINFO" android:onClick="logClickHandler" android:id="@+id/ButtonINFO"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="logClickHandler" android:id="@+id/ButtonDEBUG" android:text="@string/buttonDEBUG"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="logClickHandler" android:text="@string/buttonVERBOSE" android:id="@+id/ButtonVERBOSE"></Button>
+</LinearLayout>
+</LinearLayout>
+
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer2">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isLoggableLogging"></TextView>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonERROR" android:text="@string/buttonERROR" android:onClick="logIsLoggableClickHandler"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonWARN" android:text="@string/buttonWARN" android:onClick="logIsLoggableClickHandler"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buttonINFO" android:id="@+id/ButtonINFO" android:onClick="logIsLoggableClickHandler"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonDEBUG" android:text="@string/buttonDEBUG" android:onClick="logIsLoggableClickHandler"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buttonVERBOSE" android:id="@+id/ButtonVERBOSE" android:onClick="logIsLoggableClickHandler"></Button>
+</LinearLayout>
+</LinearLayout>
+
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/LinearLayoutContainer2">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Miscellaneous"></TextView>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonStackTrace" android:text="@string/buttonStackTrace" android:onClick="stackTraceClickHandler"></Button>
+</LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
