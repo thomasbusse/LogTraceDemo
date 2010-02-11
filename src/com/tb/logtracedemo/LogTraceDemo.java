@@ -25,7 +25,7 @@ public class LogTraceDemo extends Activity {
 		Log.v(LOG_TAG, "onCreate exited");
 	}
 
-	/** Will be connected with the buttons via XML */
+	/** EXAMPLE: Logging */
 	public void logClickHandler(View view) {
 		switch (view.getId()) {
 		case R.id.ButtonERROR:
@@ -43,10 +43,13 @@ public class LogTraceDemo extends Activity {
 		case R.id.ButtonVERBOSE:
 			Log.v(LOG_TAG, "ButtonVERBOSE was pressed!");
 			break;
+		case R.id.ButtonLogASSERT:
+			Log.println(Log.ASSERT, LOG_TAG, "ButtonLogASSERT was pressed!");
+			break;
 		}
 	}
 
-	/** Will be connected with the buttons via XML */
+	/** EXAMPLE: isLoggable */
 	public void logIsLoggableClickHandler(View view) {
 		switch (view.getId()) {
 		case R.id.ButtonERROR:
@@ -74,10 +77,15 @@ public class LogTraceDemo extends Activity {
 				Log.v(LOG_TAG, "ButtonVERBOSE (isLoggable) was pressed!");
 			}
 			break;
+		case R.id.ButtonLogASSERT:
+			if (Log.isLoggable(LOG_TAG, Log.ASSERT)) {
+				Log.println(Log.ASSERT, LOG_TAG, "ButtonLogASSERT (isLoggable) was pressed!");
+			}
+			break;
 		}
 	}
 
-	/** Will be connected with the buttons via XML */
+	/** EXAMPLE: Stacktrace */
 	public void stackTraceClickHandler(View view) {
 		StackTraceDemo std = new StackTraceDemo();
 		// Call a method to create an exception which contains a stacktrace
@@ -85,8 +93,8 @@ public class LogTraceDemo extends Activity {
 		std.printStackTrace();
 	}
 
-	/** Will be connected with the buttons via XML */
-	public void assertclickHandler(View view) {
+	/** EXAMPLE: Assertions */
+	public void assertClickHandler(View view) {
 		switch (view.getId()) {
 		case R.id.ButtonAssertSimple:
 			assert false;
