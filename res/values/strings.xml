@@ -3,14 +3,18 @@
     <string name="info">This is a small app to show the logging functionality of Android!</string>
     <string name="app_name">LogTraceDemo</string>
 <string name="buttonERROR">ERROR</string>
-<string name="buttonWARN">WARN</string><string name="buttonINFO">INFO</string>
+<string name="buttonWARN">WARN</string>
+<string name="buttonINFO">INFO</string>
 <string name="buttonDEBUG">DEBUG</string>
 <string name="buttonVERBOSE">VERBOSE</string>
 <string name="buttonLogASSERT">Log ASSERT</string>
-<string name="normalLogging">Normal Log</string><string name="isLoggableLogging">isLoggable Log</string>
+<string name="normalLogging">Normal Log:</string>
+<string name="isLoggableLogging">isLoggable Log:</string>
 <string name="buttonStackTrace">Stack Trace</string>
 <string name="buttonAssertSimple">Simple Assert</string>
 <string name="buttonAssertWithMsg">Assert with Message</string>
-<string name="Miscellaneous">Miscellaneous</string>
-<string name="Asserts">Asserts</string>
+<string name="buttonTraceView">TraceView</string>
+<string name="Miscellaneous">Miscellaneous:</string>
+<string name="Asserts">Asserts:</string>
+<string name="TraceView">TraceView:</string>
 </resources>

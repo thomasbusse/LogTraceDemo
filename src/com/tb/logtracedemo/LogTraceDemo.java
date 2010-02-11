@@ -1,11 +1,10 @@
 package com.tb.logtracedemo;
 
-import com.tb.logtracedemo.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Debug;
 import android.util.Log;
-import android.view.View; 
+import android.view.View;
 
 /**
  * LogTraceDemo
@@ -103,6 +102,18 @@ public class LogTraceDemo extends Activity {
 			assert false : "My assert message";
 			break;
 		}
+	}
+
+	/** EXAMPLE: TraceView */
+	public void traceViewClickHandler(View view) {
+		// Create trace file with starting the method tracing
+		Debug.startMethodTracing();
+		// Create an example class
+		TraceViewDemo tvd = new TraceViewDemo();
+		// Call a method to demonstrate profiling
+		tvd.startMethod();
+		// Stop method tracing
+		Debug.stopMethodTracing();
 	}
 
 }
