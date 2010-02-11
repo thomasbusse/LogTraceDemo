@@ -28,6 +28,7 @@ public class LogTraceDemo extends Activity {
 	public void logClickHandler(View view) {
 		switch (view.getId()) {
 		case R.id.ButtonERROR:
+			int i;
 			Log.e(LOG_TAG, "ButtonERROR was pressed!");
 			break;
 		case R.id.ButtonWARN:

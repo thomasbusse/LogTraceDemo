@@ -41,11 +41,23 @@ public class StackTraceDemo {
 		try {
 			outerMethod(10);
 		} catch (Exception e) {
-			// handle exception: in this case here print the stack trace of the throwable
+			// handle exception: in this case here print the stack trace of the
+			// throwable
 			String st;
-			// Once we got the throwable (exception) we can get the stack trace and print it
-			st = Log.getStackTraceString(e);
+			// Once we got the throwable (exception) we can get the stack trace
+			// and print it
+
+			// Use of getStackTrace
+			Log.i(LOG_TAG, "Log.getStackTrace:");
+			st = Log.getStackTraceString(e);	// <- here we get the stack trace
 			Log.i(LOG_TAG, st);
+
+			// or simpler:
+			Log.i(LOG_TAG, "Log.i(..,..,throwable): ", e);	// <- We pass the throwable and the stack trace is printed
+
+			// special form only available at WARN verbosity level:
+			Log.w(LOG_TAG, "Special log.w form:");
+			Log.w(LOG_TAG, e);	// <- We pass the throwable and the stack trace is printed
 		}
 	}
 
