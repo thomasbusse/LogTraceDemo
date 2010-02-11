@@ -107,7 +107,7 @@ public class LogTraceDemo extends Activity {
 	/** EXAMPLE: TraceView */
 	public void traceViewClickHandler(View view) {
 		// Create trace file with starting the method tracing
-		Debug.startMethodTracing();
+		Debug.startMethodTracing( "LogTraceDemo" );
 		// Create an example class
 		TraceViewDemo tvd = new TraceViewDemo();
 		// Call a method to demonstrate profiling
