@@ -9,7 +9,7 @@ import android.view.View;
 /**
  * LogTraceDemo
  * @author tbusse
- * 2
+ * 3
  */
 public class LogTraceDemo extends Activity {
 	final String LOG_TAG = "LOGTRACEDEMO";
