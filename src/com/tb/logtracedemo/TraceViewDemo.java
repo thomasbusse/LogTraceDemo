@@ -27,8 +27,7 @@ public class TraceViewDemo {
 			// sum = sum + sign * term;
 			sum = add( sum, mult(sign, term) );
 			if (k % (N / 50) == 0) // print one in 50
-				print("k: " + k + ", " + sum + ", pi: " + sum
-						* 4.0);
+				print("k: " + k + ", " + sum + ", pi: " + sum * 4.0);
 			sign = -sign;
 		}
 		print("Final pi (approx., " + N + " terms): " + sum * 4.0);

@@ -8,7 +8,6 @@ import android.view.View;
 
 /**
  * LogTraceDemo
- * package renamed.
  * @author tbusse
  * 
  */
@@ -28,7 +27,6 @@ public class LogTraceDemo extends Activity {
 	public void logClickHandler(View view) {
 		switch (view.getId()) {
 		case R.id.ButtonERROR:
-			int i;
 			Log.e(LOG_TAG, "ButtonERROR was pressed!");
 			break;
 		case R.id.ButtonWARN:
@@ -42,6 +40,7 @@ public class LogTraceDemo extends Activity {
 			break;
 		case R.id.ButtonVERBOSE:
 			Log.v(LOG_TAG, "ButtonVERBOSE was pressed!");
+			// Log.println(Log.VERBOSE, LOG_TAG, "ButtonLogVerbose println was pressed!");
 			break;
 		case R.id.ButtonLogASSERT:
 			Log.println(Log.ASSERT, LOG_TAG, "ButtonLogASSERT was pressed!");

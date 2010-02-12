@@ -40,7 +40,8 @@ public class StackTraceDemo {
 		Log.i(LOG_TAG, "printStackTrace entered");
 		try {
 			outerMethod(10);
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			// handle exception: in this case here print the stack trace of the
 			// throwable
 			String st;
